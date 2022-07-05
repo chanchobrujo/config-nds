@@ -1,0 +1,76 @@
+0.12
+- fixed: better iterrupt timing (should fix Mario Land 2)
+- fixed: multipacket SGB messages (fixes Pokemon R/G/B color overlays)
+- added: backlight of the menu screen is turned off when not used
+- added: fullscreen scaling (ignores aspect ratio)
+
+0.11
+- changed: optimized software renderer
+- changed: optimized cpu core
+- fixed: multiplayer pad reading in SGB games (Battle Arena Toshinden
+  and others)
+
+0.10
+- changed: updated devkitARM and associated libraries to r21
+- fixed: STOP opcode (fixes Konami Collection 2 JP & 4 JP)
+- fixed: found and reverted patch that caused problem with pumpkin level in
+  Mario Land 2
+- fixed: another change in interrupt handling to fix Monster Rancher Explorer
+- fixed: pallete change effects
+- fixed: interrupt enable register, fixes graphic glithes in Pokemon Pinball
+  and Donkey Kong
+- fixed: DAA opcode flags
+- added: Super GameBoy borders and coloring support
+- added: rumble emulation with slot 2 rumble pak
+- added: menu
+- added: green color scheme for classic gb
+- added: configurable x/y key functions
+- added: save states
+
+0.9
+- fixed: joypad register emulation (fixes Wario Blast)
+- fixed: GBC hdma (fixes Pokemon Crystal graphics)
+- fixed: interrupt flags emulation (fixes Bouble Bobble)
+- fixed: V-blank interrupt timing (fixes Altered Space)
+- fixed: split window emulation (fixes Donkey Kong graphics)
+- fixed: GB timer initialization (fixes Pokemon Pinball)
+- added: fake serial interrupts (fixes many early games)
+- added: RTC emulation
+- added: pseudo bilinear upscaling mode
+
+0.8
+- fixed: GBC speed change did not work for some games (like Mario Bros Deluxe)
+- fixed: interrupt priority
+- fixed: corrected timers interrupt frequency
+- fixed: tile in foreground color 0 is transparent
+- added: preliminary sound emulation
+- added: auto save on exit to rom menu
+
+0.7
+- fixed: less interscreen video glitches
+- fixed: correct flag bits locations, helps Zelda Oracle of Ages
+- fixed: window size overflow, helps with menu in both Zelda Oracles
+- added: 60fps emulation speed sync
+- added: fast mode with L button
+- changed: cpu emulation optimizations, more games run fullspeed
+
+0.5
+- changed: new faster display method (with triple buffering), may cause visual
+  glitches with games using pallette based effects
+- added: fps display
+- fixed(?): video modes emulation, helps for some games but messes with others
+- added: rom selection menu sorting, key repeat and position history
+- fixed: inverted GBC sprite priorities
+
+0.4
+- fix for Zelda Oracle hang after first screen
+- implemented GBC tile in foreground priority attribute (needed for Zelda Oracle)
+
+0.3
+- "ADD SP, #xx" instruction fix, (helps for many games including Pokemon Card 2)
+- CGB HDMA bug fixed
+- MBC type 0x13 correctly recognized (now save works in Pokemon Red/Green/Blue)
+- added some powersaving when NDS closed during emulation
+
+0.2
+- zipped rom support

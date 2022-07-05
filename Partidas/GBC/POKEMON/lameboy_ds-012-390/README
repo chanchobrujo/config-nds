@@ -1,0 +1,49 @@
+Lameboy DS
+
+== Installation ==
+- patch lameboy.nds file with proper flash driver (unless your card firmware
+  does it for you), see chishm.drunkencoders.com/DLDI/ for details
+- copy patched lameboy.nds to your flash device
+- copy roms to any folder on the flash (default is "lameboy")
+
+== Menu Keys ==
+Up, Down - previus/next rom/option
+Left, Right - prevoius/next page, change option
+A - select
+B - parent directory
+L/R - change menu page
+
+== Ingame Keys ==
+Up, Right, Left, Down, A, B, Start, Select - maps to GB keys
+X/Y - configurable
+L - fast mode (no frame sync and renders only every 8th frame)
+R/Touch - show menu
+
+== Menu Options ==
+Exit - saves RAM or state and exits to rom selction
+Continue - hide menu (also A on top menu bar)
+Save - saves RAM (.sav) or state (.lsX)
+Load - loads state
+Delete state - removes current save state slot
+State slot - chooses between save slots or simple RAM save
+Exit without save - exits to rom selection
+Reset - resets Game Boy
+
+X Y Keys - X/Y keys function
+L Key - fast key type (classic / toggle)
+
+GBC - GameBoy Color emulation (Never - disable, If Needed - only in GBC
+   exclusive games, Always - all games that support GBC)
+SGB - Super GameBoy emulation
+Rumble - Enable rumble emulation (additional slot 2 hardware required)
+Test rumble - Set rumble on for about 1s
+
+GB Colors - Selects color scheme for monochrome games
+Vertical Pan - non scaled GB screen vertical position (useful with  SGB borders)
+Game Screen - Switch top/bottom DS screens function
+Scale - selects scaling mode
+Scaling Filter - enables bilinear filtering
+Show FPS - enables fps counter
+
+Save Settings - saves menu settings
+Default Settings - reset to default menu settings
